@@ -99,12 +99,7 @@ public class PanelBlock extends Block implements Waterloggable {
         } else {
             FluidState fluidState = ctx.getWorld().getFluidState(blockPos);
             BlockState blockState2 = this.getDefaultState().with(TYPE, PanelType.SINGLE_NORTH).with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
-            Direction hitDirection = ctx.getSide();
             Direction.Axis playerAxis = ctx.getHorizontalPlayerFacing().getAxis();
-
-//            if (hitDirection.getAxis().isHorizontal()) {
-//                return blockState2.with(TYPE, getPanelTypeFromHorizontalDirection(hitDirection.getOpposite()));
-//            } else {
             if (playerAxis == Direction.Axis.X) {
                 if (ctx.getHitPos().x - blockPos.getX() > 0.5) {
                     return blockState2.with(TYPE, PanelType.SINGLE_EAST);
@@ -118,7 +113,6 @@ public class PanelBlock extends Block implements Waterloggable {
                     return blockState2.with(TYPE, PanelType.SINGLE_NORTH);
                 }
             }
-//            }
         }
     }
 
