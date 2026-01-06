@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_panel",
+  "key": {
+    "#": "combined-worldgen:azalea_mosaic"
+  },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 6,
+    "id": "panels:azalea_mosaic_panel"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "minecraft:block/warped_planks"
+    },
+    "type=double_z": {
+      "model": "minecraft:block/warped_planks"
+    },
+    "type=single_east": {
+      "model": "panels:block/warped_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/warped_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/warped_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/warped_panel_west"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "panels",
+	"version": "${version}",
+	"name": "Panels",
+	"description": "Adds vertical slab blocks called panels (includes Modded blocks)",
+	"authors": [
+		"BlueSteel42"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/panels/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"bluesteel42.panels.Panels"
+		],
+		"client" : [
+			"bluesteel42.panels.PanelsClient"
+		],
+		"fabric-datagen": [
+			"bluesteel42.panels.PanelsDataGenerator"
+		]
+	},
+	"mixins": [
+		"panels.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*",
+		"combined-worldgen": "*",
+		"nether-hyphae": "*",
+		"overworld-hyphae": "*"
+	}
+}

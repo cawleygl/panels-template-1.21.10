@@ -1,0 +1,8 @@
+{
+  "parent": "panels:block/template_consistent_panel_west",
+  "textures": {
+    "back": "nether-hyphae:block/blue_nether_bricks",
+    "front": "nether-hyphae:block/blue_nether_bricks",
+    "side": "nether-hyphae:block/blue_nether_bricks"
+  }
+}

@@ -1,0 +1,5 @@
+// 1.21.10	-999999999-01-01T00:00:00	Panels/Tags for minecraft:item
+f070dcc82bcf57c348823ad61a36067115cc752d data/minecraft/tags/item/non_flammable_wood.json
+ae669e6a273e574a35df16b6cc9384426a62a54c data/panels/tags/item/mushroom_panels.json
+c1e483e4e7df96b42083d9417b396503e264fad6 data/panels/tags/item/panels.json
+a646d2e939e98a206daf7589bcc07000bcac5fb3 data/panels/tags/item/wooden_panels.json

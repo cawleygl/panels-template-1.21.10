@@ -1,0 +1,8 @@
+{
+  "parent": "panels:block/template_consistent_panel_north",
+  "textures": {
+    "back": "minecraft:block/sandstone",
+    "front": "minecraft:block/sandstone",
+    "side": "minecraft:block/sandstone"
+  }
+}

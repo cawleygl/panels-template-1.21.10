@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_panel",
+  "key": {
+    "#": "combined-worldgen:chorus_mosaic"
+  },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 6,
+    "id": "panels:chorus_mosaic_panel"
+  }
+}

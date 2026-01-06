@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "minecraft:block/polished_andesite"
+    },
+    "type=double_z": {
+      "model": "minecraft:block/polished_andesite"
+    },
+    "type=single_east": {
+      "model": "panels:block/polished_andesite_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/polished_andesite_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/polished_andesite_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/polished_andesite_panel_west"
+    }
+  }
+}

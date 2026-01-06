@@ -1,0 +1,8 @@
+{
+  "parent": "panels:block/template_consistent_panel_inventory",
+  "textures": {
+    "back": "combined-worldgen:block/chorus_mosaic",
+    "front": "combined-worldgen:block/chorus_mosaic",
+    "side": "combined-worldgen:block/chorus_mosaic"
+  }
+}

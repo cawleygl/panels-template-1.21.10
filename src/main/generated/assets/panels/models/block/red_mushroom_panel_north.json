@@ -1,0 +1,8 @@
+{
+  "parent": "panels:block/template_consistent_panel_north",
+  "textures": {
+    "back": "overworld-hyphae:block/red_mushroom_planks",
+    "front": "overworld-hyphae:block/red_mushroom_planks",
+    "side": "overworld-hyphae:block/red_mushroom_planks"
+  }
+}

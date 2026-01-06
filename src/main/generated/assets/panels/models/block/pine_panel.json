@@ -1,0 +1,8 @@
+{
+  "parent": "panels:block/template_consistent_panel_inventory",
+  "textures": {
+    "back": "combined-worldgen:block/pine_planks",
+    "front": "combined-worldgen:block/pine_planks",
+    "side": "combined-worldgen:block/pine_planks"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "minecraft:block/oak_planks"
+    },
+    "type=double_z": {
+      "model": "minecraft:block/oak_planks"
+    },
+    "type=single_east": {
+      "model": "panels:block/oak_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/oak_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/oak_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/oak_panel_west"
+    }
+  }
+}

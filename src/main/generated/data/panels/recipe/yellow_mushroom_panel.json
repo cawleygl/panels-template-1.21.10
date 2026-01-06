@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_panel",
+  "key": {
+    "#": "overworld-hyphae:yellow_mushroom_planks"
+  },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 6,
+    "id": "panels:yellow_mushroom_panel"
+  }
+}

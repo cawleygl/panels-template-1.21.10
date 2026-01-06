@@ -1,0 +1,12 @@
+{
+  "values": [
+    "panels:cut_copper_panel",
+    "panels:weathered_cut_copper_panel",
+    "panels:oxidized_cut_copper_panel",
+    "panels:exposed_cut_copper_panel",
+    "panels:waxed_cut_copper_panel",
+    "panels:waxed_weathered_cut_copper_panel",
+    "panels:waxed_exposed_cut_copper_panel",
+    "panels:waxed_oxidized_cut_copper_panel"
+  ]
+}

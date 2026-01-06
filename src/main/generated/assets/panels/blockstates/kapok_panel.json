@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "combined-worldgen:block/kapok_planks"
+    },
+    "type=double_z": {
+      "model": "combined-worldgen:block/kapok_planks"
+    },
+    "type=single_east": {
+      "model": "panels:block/kapok_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/kapok_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/kapok_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/kapok_panel_west"
+    }
+  }
+}

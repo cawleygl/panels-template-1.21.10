@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "overworld-hyphae:block/magenta_mushroom_planks"
+    },
+    "type=double_z": {
+      "model": "overworld-hyphae:block/magenta_mushroom_planks"
+    },
+    "type=single_east": {
+      "model": "panels:block/magenta_mushroom_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/magenta_mushroom_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/magenta_mushroom_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/magenta_mushroom_panel_west"
+    }
+  }
+}

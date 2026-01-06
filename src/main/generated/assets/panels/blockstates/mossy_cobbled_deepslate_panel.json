@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "combined-worldgen:block/mossy_cobbled_deepslate"
+    },
+    "type=double_z": {
+      "model": "combined-worldgen:block/mossy_cobbled_deepslate"
+    },
+    "type=single_east": {
+      "model": "panels:block/mossy_cobbled_deepslate_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/mossy_cobbled_deepslate_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/mossy_cobbled_deepslate_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/mossy_cobbled_deepslate_panel_west"
+    }
+  }
+}

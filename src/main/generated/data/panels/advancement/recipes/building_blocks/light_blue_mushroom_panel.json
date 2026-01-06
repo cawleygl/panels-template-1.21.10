@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_light_blue_mushroom_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "overworld-hyphae:light_blue_mushroom_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "panels:light_blue_mushroom_panel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_light_blue_mushroom_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "panels:light_blue_mushroom_panel"
+    ]
+  }
+}

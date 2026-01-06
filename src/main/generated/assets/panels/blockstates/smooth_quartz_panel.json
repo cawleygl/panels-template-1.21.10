@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "minecraft:block/smooth_quartz"
+    },
+    "type=double_z": {
+      "model": "minecraft:block/smooth_quartz"
+    },
+    "type=single_east": {
+      "model": "panels:block/smooth_quartz_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/smooth_quartz_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/smooth_quartz_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/smooth_quartz_panel_west"
+    }
+  }
+}

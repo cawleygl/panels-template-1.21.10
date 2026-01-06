@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "minecraft:block/spruce_planks"
+    },
+    "type=double_z": {
+      "model": "minecraft:block/spruce_planks"
+    },
+    "type=single_east": {
+      "model": "panels:block/spruce_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/spruce_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/spruce_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/spruce_panel_west"
+    }
+  }
+}

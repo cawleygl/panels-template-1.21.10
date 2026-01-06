@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "mushroom_panel",
+  "ingredients": [
+    "minecraft:green_dye",
+    [
+      "panels:white_mushroom_panel",
+      "panels:light_gray_mushroom_panel",
+      "panels:gray_mushroom_panel",
+      "panels:black_mushroom_panel",
+      "panels:brown_mushroom_panel",
+      "panels:red_mushroom_panel",
+      "panels:orange_mushroom_panel",
+      "panels:yellow_mushroom_panel",
+      "panels:lime_mushroom_panel",
+      "panels:cyan_mushroom_panel",
+      "panels:light_blue_mushroom_panel",
+      "panels:blue_mushroom_panel",
+      "panels:purple_mushroom_panel",
+      "panels:magenta_mushroom_panel",
+      "panels:pink_mushroom_panel",
+      "panels:mushroom_panel"
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "panels:green_mushroom_panel"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "panels:block/smooth_deepslate_panel_double",
+      "x": 90,
+      "y": 90
+    },
+    "type=double_z": {
+      "model": "panels:block/smooth_deepslate_panel_double",
+      "x": 90
+    },
+    "type=single_east": {
+      "model": "panels:block/smooth_deepslate_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/smooth_deepslate_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/smooth_deepslate_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/smooth_deepslate_panel_west"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "panels:block/template_consistent_panel_east",
+  "textures": {
+    "back": "combined-worldgen:block/willow_planks",
+    "front": "combined-worldgen:block/willow_planks",
+    "side": "combined-worldgen:block/willow_planks"
+  }
+}

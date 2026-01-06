@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "combined-worldgen:block/willow_planks"
+    },
+    "type=double_z": {
+      "model": "combined-worldgen:block/willow_planks"
+    },
+    "type=single_east": {
+      "model": "panels:block/willow_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/willow_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/willow_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/willow_panel_west"
+    }
+  }
+}

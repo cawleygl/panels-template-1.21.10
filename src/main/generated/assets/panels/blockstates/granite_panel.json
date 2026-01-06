@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "minecraft:block/granite"
+    },
+    "type=double_z": {
+      "model": "minecraft:block/granite"
+    },
+    "type=single_east": {
+      "model": "panels:block/granite_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/granite_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/granite_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/granite_panel_west"
+    }
+  }
+}

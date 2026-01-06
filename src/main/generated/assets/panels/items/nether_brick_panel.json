@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "panels:block/nether_brick_panel"
+  }
+}
