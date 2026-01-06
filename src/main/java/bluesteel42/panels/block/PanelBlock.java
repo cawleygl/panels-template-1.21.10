@@ -77,18 +77,6 @@ public class PanelBlock extends Block implements Waterloggable {
         }
     }
 
-    private PanelType getPanelTypeFromHorizontalDirection(Direction direction) {
-        if (direction.equals(Direction.SOUTH)) {
-            return PanelType.SINGLE_SOUTH;
-        } else if (direction.equals(Direction.EAST)) {
-            return PanelType.SINGLE_EAST;
-        } else if (direction.equals(Direction.WEST)) {
-            return PanelType.SINGLE_WEST;
-        } else {
-            return PanelType.SINGLE_NORTH;
-        }
-    }
-
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
