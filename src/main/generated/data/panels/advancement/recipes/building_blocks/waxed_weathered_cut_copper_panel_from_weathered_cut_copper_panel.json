@@ -3,15 +3,15 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "panels:waxed_exposed_cut_copper_panel"
+        "recipe": "panels:waxed_weathered_cut_copper_panel_from_weathered_cut_copper_panel"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_waxed_exposed_cut_copper": {
+    "has_weathered_cut_copper_panel": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:waxed_exposed_cut_copper"
+            "items": "panels:weathered_cut_copper_panel"
           }
         ]
       },
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_waxed_exposed_cut_copper"
+      "has_weathered_cut_copper_panel"
     ]
   ],
   "rewards": {
     "recipes": [
-      "panels:waxed_exposed_cut_copper_panel"
+      "panels:waxed_weathered_cut_copper_panel_from_weathered_cut_copper_panel"
     ]
   }
 }

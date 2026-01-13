@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_oak_planks": {
+    "has_blackstone": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:oak_planks"
+            "items": "minecraft:blackstone"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "panels:petrified_oak_panel"
+        "recipe": "panels:polished_blackstone_brick_panel_from_blackstone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_oak_planks"
+      "has_blackstone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "panels:petrified_oak_panel"
+      "panels:polished_blackstone_brick_panel_from_blackstone_stonecutting"
     ]
   }
 }

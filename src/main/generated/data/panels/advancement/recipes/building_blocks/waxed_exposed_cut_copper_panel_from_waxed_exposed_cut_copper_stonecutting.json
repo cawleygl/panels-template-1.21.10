@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "panels:waxed_exposed_cut_copper_panel"
+        "recipe": "panels:waxed_exposed_cut_copper_panel_from_waxed_exposed_cut_copper_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "panels:waxed_exposed_cut_copper_panel"
+      "panels:waxed_exposed_cut_copper_panel_from_waxed_exposed_cut_copper_stonecutting"
     ]
   }
 }

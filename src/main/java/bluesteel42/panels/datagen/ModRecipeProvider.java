@@ -12,7 +12,6 @@ import bluesteel42.combinedworldgen.wood.maple.block.MapleWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.petrified.block.PetrifiedWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.pine.block.PineWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.willow.block.WillowWoodModBlocks;
-import bluesteel42.overworldhyphae.item.ModItems;
 import bluesteel42.panels.Panels;
 import bluesteel42.panels.block.CombinedWorldgenModBlocks;
 import bluesteel42.panels.block.ModBlocks;
@@ -30,6 +29,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.resource.featuretoggle.FeatureSet;
 
 import java.util.Arrays;
 import java.util.List;
@@ -50,6 +50,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerPanelRecipe("", output, input);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, output, input, 2);
             }
+            private void offerAdditionalStonecuttingRecipe(ItemConvertible input, ItemConvertible output) {
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, output, input, 2);
+            }
 
             private void offerPanelRecipe(String group, ItemConvertible output, ItemConvertible input) {
                 createPanelRecipe(group, output, Ingredient.ofItem(input)).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter);
@@ -59,6 +62,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 return createShaped(RecipeCategory.BUILDING_BLOCKS, output, 6).group(group).input('#', input).pattern("#").pattern("#").pattern("#");
             }
 
+            public void offerWaxingRecipe(ItemConvertible input, ItemConvertible output) {
+                createShapeless(RecipeCategory.BUILDING_BLOCKS, output).group(getItemPath(output)).input(input).input(Items.HONEYCOMB).criterion(hasItem(input), conditionsFromItem(input)).offerTo(exporter, convertBetween(output, input));
+            }
 
             @Override
             public void generate() {
@@ -76,55 +82,98 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerWoodenPanelRecipes(Blocks.CHERRY_PLANKS, ModBlocks.CHERRY_PANEL);
                 offerWoodenPanelRecipes(Blocks.BAMBOO_MOSAIC, ModBlocks.BAMBOO_MOSAIC_PANEL);
 
+
                 offerStonePanelRecipes(Blocks.STONE, ModBlocks.STONE_PANEL);
                 offerStonePanelRecipes(Blocks.STONE_BRICKS, ModBlocks.STONE_BRICK_PANEL);
-                offerStonePanelRecipes(Blocks.SMOOTH_STONE, ModBlocks.SMOOTH_STONE_PANEL);
-                offerStonePanelRecipes(Blocks.SANDSTONE, ModBlocks.SANDSTONE_PANEL);
-                offerStonePanelRecipes(Blocks.PURPUR_BLOCK, ModBlocks.PURPUR_PANEL);
-                offerStonePanelRecipes(Blocks.QUARTZ_BLOCK, ModBlocks.QUARTZ_PANEL);
-                offerStonePanelRecipes(Blocks.RED_SANDSTONE, ModBlocks.RED_SANDSTONE_PANEL);
-                offerStonePanelRecipes(Blocks.BRICKS, ModBlocks.BRICK_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.STONE, ModBlocks.STONE_BRICK_PANEL);
+                offerStonePanelRecipes(Blocks.MOSSY_STONE_BRICKS, ModBlocks.MOSSY_STONE_BRICK_PANEL);
                 offerStonePanelRecipes(Blocks.COBBLESTONE, ModBlocks.COBBLESTONE_PANEL);
+                offerStonePanelRecipes(Blocks.MOSSY_COBBLESTONE, ModBlocks.MOSSY_COBBLESTONE_PANEL);
+                offerStonePanelRecipes(Blocks.SMOOTH_STONE, ModBlocks.SMOOTH_STONE_PANEL);
+
+                offerStonePanelRecipes(Blocks.ANDESITE, ModBlocks.ANDESITE_PANEL);
+                offerStonePanelRecipes(Blocks.DIORITE, ModBlocks.DIORITE_PANEL);
+                offerStonePanelRecipes(Blocks.GRANITE, ModBlocks.GRANITE_PANEL);
+                offerStonePanelRecipes(Blocks.POLISHED_ANDESITE, ModBlocks.POLISHED_ANDESITE_PANEL);
+                offerStonePanelRecipes(Blocks.POLISHED_GRANITE, ModBlocks.POLISHED_GRANITE_PANEL);
+                offerStonePanelRecipes(Blocks.POLISHED_DIORITE, ModBlocks.POLISHED_DIORITE_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.ANDESITE, ModBlocks.POLISHED_ANDESITE_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.GRANITE, ModBlocks.POLISHED_GRANITE_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.DIORITE, ModBlocks.POLISHED_DIORITE_PANEL);
+
+                offerStonePanelRecipes(Blocks.BRICKS, ModBlocks.BRICK_PANEL);
+                offerStonePanelRecipes(Blocks.MUD_BRICKS, ModBlocks.MUD_BRICK_PANEL);
+                offerStonePanelRecipes(Blocks.TUFF, ModBlocks.TUFF_PANEL);
+                offerStonePanelRecipes(Blocks.POLISHED_TUFF, ModBlocks.POLISHED_TUFF_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.TUFF, ModBlocks.POLISHED_TUFF_PANEL);
+                offerStonePanelRecipes(Blocks.TUFF_BRICKS, ModBlocks.TUFF_BRICK_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.TUFF, ModBlocks.TUFF_BRICK_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.POLISHED_TUFF, ModBlocks.TUFF_BRICK_PANEL);
+                offerStonePanelRecipes(Blocks.RESIN_BRICKS, ModBlocks.RESIN_BRICK_PANEL);
+
+                offerStonePanelRecipes(Blocks.SANDSTONE, ModBlocks.SANDSTONE_PANEL);
+                offerStonePanelRecipes(Blocks.RED_SANDSTONE, ModBlocks.RED_SANDSTONE_PANEL);
+                offerStonePanelRecipes(Blocks.SMOOTH_SANDSTONE, ModBlocks.SMOOTH_SANDSTONE_PANEL);
+                offerStonePanelRecipes(Blocks.SMOOTH_RED_SANDSTONE, ModBlocks.SMOOTH_RED_SANDSTONE_PANEL);
+                offerStonePanelRecipes(Blocks.CUT_SANDSTONE, ModBlocks.CUT_SANDSTONE_PANEL);
+                offerStonePanelRecipes(Blocks.CUT_RED_SANDSTONE, ModBlocks.CUT_RED_SANDSTONE_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.SANDSTONE, ModBlocks.CUT_SANDSTONE_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.RED_SANDSTONE, ModBlocks.CUT_RED_SANDSTONE_PANEL);
+
+                offerStonePanelRecipes(Blocks.PURPUR_BLOCK, ModBlocks.PURPUR_PANEL);
+
                 offerStonePanelRecipes(Blocks.NETHER_BRICKS, ModBlocks.NETHER_BRICK_PANEL);
-                offerStonePanelRecipes(Blocks.OAK_PLANKS, ModBlocks.PETRIFIED_OAK_PANEL);
+                offerStonePanelRecipes(Blocks.RED_NETHER_BRICKS, ModBlocks.RED_NETHER_BRICK_PANEL);
+                offerStonePanelRecipes(Blocks.QUARTZ_BLOCK, ModBlocks.QUARTZ_PANEL);
+                offerStonePanelRecipes(Blocks.SMOOTH_QUARTZ, ModBlocks.SMOOTH_QUARTZ_PANEL);
+                offerStonePanelRecipes(Blocks.BLACKSTONE, ModBlocks.BLACKSTONE_PANEL);
+                offerStonePanelRecipes(Blocks.POLISHED_BLACKSTONE, ModBlocks.POLISHED_BLACKSTONE_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.BLACKSTONE, ModBlocks.POLISHED_BLACKSTONE_PANEL);
+                offerStonePanelRecipes(Blocks.POLISHED_BLACKSTONE_BRICKS, ModBlocks.POLISHED_BLACKSTONE_BRICK_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.BLACKSTONE, ModBlocks.POLISHED_BLACKSTONE_BRICK_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.POLISHED_BLACKSTONE, ModBlocks.POLISHED_BLACKSTONE_BRICK_PANEL);
+
                 offerStonePanelRecipes(Blocks.PRISMARINE, ModBlocks.PRISMARINE_PANEL);
                 offerStonePanelRecipes(Blocks.PRISMARINE_BRICKS, ModBlocks.PRISMARINE_BRICK_PANEL);
                 offerStonePanelRecipes(Blocks.DARK_PRISMARINE, ModBlocks.DARK_PRISMARINE_PANEL);
-                offerStonePanelRecipes(Blocks.POLISHED_GRANITE, ModBlocks.POLISHED_GRANITE_PANEL);
-                offerStonePanelRecipes(Blocks.SMOOTH_RED_SANDSTONE, ModBlocks.SMOOTH_RED_SANDSTONE_PANEL);
-                offerStonePanelRecipes(Blocks.MOSSY_STONE_BRICKS, ModBlocks.MOSSY_STONE_BRICK_PANEL);
-                offerStonePanelRecipes(Blocks.POLISHED_DIORITE, ModBlocks.POLISHED_DIORITE_PANEL);
-                offerStonePanelRecipes(Blocks.MOSSY_COBBLESTONE, ModBlocks.MOSSY_COBBLESTONE_PANEL);
+
                 offerStonePanelRecipes(Blocks.END_STONE_BRICKS, ModBlocks.END_STONE_BRICK_PANEL);
-                offerStonePanelRecipes(Blocks.SMOOTH_SANDSTONE, ModBlocks.SMOOTH_SANDSTONE_PANEL);
-                offerStonePanelRecipes(Blocks.SMOOTH_QUARTZ, ModBlocks.SMOOTH_QUARTZ_PANEL);
-                offerStonePanelRecipes(Blocks.GRANITE, ModBlocks.GRANITE_PANEL);
-                offerStonePanelRecipes(Blocks.ANDESITE, ModBlocks.ANDESITE_PANEL);
-                offerStonePanelRecipes(Blocks.RED_NETHER_BRICKS, ModBlocks.RED_NETHER_BRICK_PANEL);
-                offerStonePanelRecipes(Blocks.POLISHED_ANDESITE, ModBlocks.POLISHED_ANDESITE_PANEL);
-                offerStonePanelRecipes(Blocks.DIORITE, ModBlocks.DIORITE_PANEL);
-                offerStonePanelRecipes(Blocks.CUT_SANDSTONE, ModBlocks.CUT_SANDSTONE_PANEL);
-                offerStonePanelRecipes(Blocks.CUT_RED_SANDSTONE, ModBlocks.CUT_RED_SANDSTONE_PANEL);
-                offerStonePanelRecipes(Blocks.BLACKSTONE, ModBlocks.BLACKSTONE_PANEL);
-                offerStonePanelRecipes(Blocks.POLISHED_BLACKSTONE_BRICKS, ModBlocks.POLISHED_BLACKSTONE_BRICK_PANEL);
-                offerStonePanelRecipes(Blocks.POLISHED_BLACKSTONE, ModBlocks.POLISHED_BLACKSTONE_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.END_STONE, ModBlocks.END_STONE_BRICK_PANEL);
+
                 offerStonePanelRecipes(Blocks.COBBLED_DEEPSLATE, ModBlocks.COBBLED_DEEPSLATE_PANEL);
                 offerStonePanelRecipes(Blocks.POLISHED_DEEPSLATE, ModBlocks.POLISHED_DEEPSLATE_PANEL);
                 offerStonePanelRecipes(Blocks.DEEPSLATE_TILES, ModBlocks.DEEPSLATE_TILE_PANEL);
                 offerStonePanelRecipes(Blocks.DEEPSLATE_BRICKS, ModBlocks.DEEPSLATE_BRICK_PANEL);
-                offerStonePanelRecipes(Blocks.WEATHERED_CUT_COPPER, ModBlocks.WAXED_WEATHERED_CUT_COPPER_PANEL);
-                offerStonePanelRecipes(Blocks.EXPOSED_CUT_COPPER, ModBlocks.WAXED_EXPOSED_CUT_COPPER_PANEL);
-                offerStonePanelRecipes(Blocks.CUT_COPPER, ModBlocks.WAXED_CUT_COPPER_PANEL);
-                offerStonePanelRecipes(Blocks.OXIDIZED_CUT_COPPER, ModBlocks.OXIDIZED_CUT_COPPER_PANEL);
-                offerStonePanelRecipes(Blocks.WEATHERED_CUT_COPPER, ModBlocks.WEATHERED_CUT_COPPER_PANEL);
-                offerStonePanelRecipes(Blocks.EXPOSED_CUT_COPPER, ModBlocks.EXPOSED_CUT_COPPER_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.COBBLED_DEEPSLATE, ModBlocks.POLISHED_DEEPSLATE_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.COBBLED_DEEPSLATE, ModBlocks.DEEPSLATE_BRICK_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.POLISHED_DEEPSLATE, ModBlocks.DEEPSLATE_BRICK_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.COBBLED_DEEPSLATE, ModBlocks.DEEPSLATE_TILE_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.POLISHED_DEEPSLATE, ModBlocks.DEEPSLATE_TILE_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.DEEPSLATE_BRICKS, ModBlocks.DEEPSLATE_TILE_PANEL);
+
                 offerStonePanelRecipes(Blocks.CUT_COPPER, ModBlocks.CUT_COPPER_PANEL);
-                offerStonePanelRecipes(Blocks.OXIDIZED_CUT_COPPER, ModBlocks.WAXED_OXIDIZED_CUT_COPPER_PANEL);
-                offerStonePanelRecipes(Blocks.MUD_BRICKS, ModBlocks.MUD_BRICK_PANEL);
-                offerStonePanelRecipes(Blocks.TUFF, ModBlocks.TUFF_PANEL);
-                offerStonePanelRecipes(Blocks.POLISHED_TUFF, ModBlocks.POLISHED_TUFF_PANEL);
-                offerStonePanelRecipes(Blocks.TUFF_BRICKS, ModBlocks.TUFF_BRICK_PANEL);
-                offerStonePanelRecipes(Blocks.RESIN_BRICKS, ModBlocks.RESIN_BRICK_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.COPPER_BLOCK, ModBlocks.CUT_COPPER_PANEL);
+                offerWaxingRecipe(ModBlocks.CUT_COPPER_PANEL, ModBlocks.WAXED_CUT_COPPER_PANEL);
+                offerStonePanelRecipes(Blocks.WAXED_CUT_COPPER, ModBlocks.WAXED_CUT_COPPER_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.WAXED_COPPER_BLOCK, ModBlocks.WAXED_CUT_COPPER_PANEL);
+
+                offerStonePanelRecipes(Blocks.EXPOSED_CUT_COPPER, ModBlocks.EXPOSED_CUT_COPPER_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.EXPOSED_COPPER, ModBlocks.EXPOSED_CUT_COPPER_PANEL);
+                offerWaxingRecipe(ModBlocks.EXPOSED_CUT_COPPER_PANEL, ModBlocks.WAXED_EXPOSED_CUT_COPPER_PANEL);
+                offerStonePanelRecipes(Blocks.WAXED_EXPOSED_CUT_COPPER, ModBlocks.WAXED_EXPOSED_CUT_COPPER_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.WAXED_EXPOSED_COPPER, ModBlocks.WAXED_EXPOSED_CUT_COPPER_PANEL);
+
+                offerStonePanelRecipes(Blocks.WEATHERED_CUT_COPPER, ModBlocks.WEATHERED_CUT_COPPER_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.WEATHERED_COPPER, ModBlocks.WEATHERED_CUT_COPPER_PANEL);
+                offerWaxingRecipe(ModBlocks.WEATHERED_CUT_COPPER_PANEL, ModBlocks.WAXED_WEATHERED_CUT_COPPER_PANEL);
+                offerStonePanelRecipes(Blocks.WAXED_WEATHERED_CUT_COPPER, ModBlocks.WAXED_WEATHERED_CUT_COPPER_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.WAXED_WEATHERED_COPPER, ModBlocks.WAXED_WEATHERED_CUT_COPPER_PANEL);
+
+                offerStonePanelRecipes(Blocks.OXIDIZED_CUT_COPPER, ModBlocks.OXIDIZED_CUT_COPPER_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.OXIDIZED_COPPER, ModBlocks.OXIDIZED_CUT_COPPER_PANEL);
+                offerWaxingRecipe(ModBlocks.OXIDIZED_CUT_COPPER_PANEL, ModBlocks.WAXED_OXIDIZED_CUT_COPPER_PANEL);
+                offerStonePanelRecipes(Blocks.WAXED_OXIDIZED_CUT_COPPER, ModBlocks.WAXED_OXIDIZED_CUT_COPPER_PANEL);
+                offerAdditionalStonecuttingRecipe(Blocks.WAXED_OXIDIZED_COPPER, ModBlocks.WAXED_OXIDIZED_CUT_COPPER_PANEL);
 
                 offerStonePanelRecipes(ModBuildingBlocks.SMOOTH_DEEPSLATE, CombinedWorldgenModBlocks.SMOOTH_DEEPSLATE_PANEL);
                 offerStonePanelRecipes(ModBuildingBlocks.MOSSY_BRICKS, CombinedWorldgenModBlocks.MOSSY_BRICK_PANEL);
@@ -132,6 +181,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonePanelRecipes(ModBuildingBlocks.MOSSY_DEEPSLATE_BRICKS, CombinedWorldgenModBlocks.MOSSY_DEEPSLATE_BRICK_PANEL);
                 offerStonePanelRecipes(ModBuildingBlocks.MOSSY_COBBLED_DEEPSLATE, CombinedWorldgenModBlocks.MOSSY_COBBLED_DEEPSLATE_PANEL);
                 offerStonePanelRecipes(ModBuildingBlocks.SNOW_BRICKS, CombinedWorldgenModBlocks.SNOW_BRICK_PANEL);
+                offerAdditionalStonecuttingRecipe(ModBuildingBlocks.PACKED_SNOW, CombinedWorldgenModBlocks.SNOW_BRICK_PANEL);
 
                 offerWoodenPanelRecipes(AzaleaWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.AZALEA_PANEL);
                 offerWoodenPanelRecipes(AzaleaWoodModBlocks.MOD_MOSAIC, CombinedWorldgenModBlocks.AZALEA_MOSAIC_PANEL);

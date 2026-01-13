@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_oak_planks": {
+    "has_sandstone": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:oak_planks"
+            "items": "minecraft:sandstone"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "panels:petrified_oak_panel_from_oak_planks_stonecutting"
+        "recipe": "panels:cut_sandstone_panel_from_sandstone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_oak_planks"
+      "has_sandstone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "panels:petrified_oak_panel_from_oak_planks_stonecutting"
+      "panels:cut_sandstone_panel_from_sandstone_stonecutting"
     ]
   }
 }

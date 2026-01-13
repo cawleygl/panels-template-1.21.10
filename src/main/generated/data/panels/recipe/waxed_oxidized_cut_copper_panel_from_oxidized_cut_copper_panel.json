@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "waxed_oxidized_cut_copper_panel",
+  "ingredients": [
+    "panels:oxidized_cut_copper_panel",
+    "minecraft:honeycomb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "panels:waxed_oxidized_cut_copper_panel"
+  }
+}

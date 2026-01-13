@@ -3,15 +3,15 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "panels:waxed_exposed_cut_copper_panel"
+        "recipe": "panels:tuff_brick_panel_from_tuff_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_waxed_exposed_cut_copper": {
+    "has_tuff": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:waxed_exposed_cut_copper"
+            "items": "minecraft:tuff"
           }
         ]
       },
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_waxed_exposed_cut_copper"
+      "has_tuff"
     ]
   ],
   "rewards": {
     "recipes": [
-      "panels:waxed_exposed_cut_copper_panel"
+      "panels:tuff_brick_panel_from_tuff_stonecutting"
     ]
   }
 }
