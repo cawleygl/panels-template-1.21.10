@@ -1,8 +1,10 @@
 package bluesteel42.panels.datagen;
 
+import bluesteel42.combinedworldgen.CombinedWorldgen;
 import bluesteel42.combinedworldgen.block.building.ModBuildingBlocks;
 import bluesteel42.combinedworldgen.wood.azalea.block.AzaleaWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.baobab.block.BaobabWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.cacao.block.CacaoWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.cholla.block.ChollaWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.chorus.block.ChorusWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.citrus.block.CitrusWoodModBlocks;
@@ -14,13 +16,13 @@ import bluesteel42.combinedworldgen.wood.pine.block.PineWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.willow.block.WillowWoodModBlocks;
 import bluesteel42.panels.Panels;
 import bluesteel42.panels.block.*;
-import bluesteel42.panels.util.ModTags;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.data.*;
 import net.minecraft.client.render.model.json.WeightedVariant;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.util.Identifier;
 
 import java.util.Optional;
@@ -106,7 +108,7 @@ public class ModModelProvider extends FabricModelProvider {
         registerConsistentPanel(blockStateModelGenerator, Blocks.OAK_PLANKS, ModBlocks.OAK_PANEL);
         registerConsistentPanel(blockStateModelGenerator, Blocks.SPRUCE_PLANKS, ModBlocks.SPRUCE_PANEL);
         registerConsistentPanel(blockStateModelGenerator, Blocks.BIRCH_PLANKS, ModBlocks.BIRCH_PANEL);
-        registerConsistentPanel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, ModBlocks.JUNGLE_PANEL);
+//        registerConsistentPanel(blockStateModelGenerator, Blocks.JUNGLE_PLANKS, ModBlocks.JUNGLE_PANEL);
         registerConsistentPanel(blockStateModelGenerator, Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_PANEL);
         registerConsistentPanel(blockStateModelGenerator, Blocks.DARK_OAK_PLANKS, ModBlocks.DARK_OAK_PANEL);
         registerConsistentPanel(blockStateModelGenerator, Blocks.PALE_OAK_PLANKS, ModBlocks.PALE_OAK_PANEL);
@@ -178,6 +180,7 @@ public class ModModelProvider extends FabricModelProvider {
         registerConsistentPanel(blockStateModelGenerator, AzaleaWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.AZALEA_PANEL);
         registerConsistentPanel(blockStateModelGenerator, AzaleaWoodModBlocks.MOD_MOSAIC, CombinedWorldgenModBlocks.AZALEA_MOSAIC_PANEL);
         registerConsistentPanel(blockStateModelGenerator, BaobabWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.BAOBAB_PANEL);
+        registerConsistentPanel(blockStateModelGenerator, CacaoWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.CACAO_PANEL);
         registerConsistentPanel(blockStateModelGenerator, ChollaWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.CHOLLA_PANEL);
         registerConsistentPanel(blockStateModelGenerator, ChollaWoodModBlocks.MOD_MOSAIC, CombinedWorldgenModBlocks.CHOLLA_MOSAIC_PANEL);
         registerConsistentPanel(blockStateModelGenerator, ChorusWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.CHORUS_PANEL);

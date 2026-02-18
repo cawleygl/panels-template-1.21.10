@@ -3,6 +3,7 @@ package bluesteel42.panels.datagen;
 import bluesteel42.combinedworldgen.block.building.ModBuildingBlocks;
 import bluesteel42.combinedworldgen.wood.azalea.block.AzaleaWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.baobab.block.BaobabWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.cacao.block.CacaoWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.cholla.block.ChollaWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.chorus.block.ChorusWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.citrus.block.CitrusWoodModBlocks;
@@ -29,7 +30,6 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.resource.featuretoggle.FeatureSet;
 
 import java.util.Arrays;
 import java.util.List;
@@ -71,7 +71,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerWoodenPanelRecipes(Blocks.OAK_PLANKS, ModBlocks.OAK_PANEL);
                 offerWoodenPanelRecipes(Blocks.SPRUCE_PLANKS, ModBlocks.SPRUCE_PANEL);
                 offerWoodenPanelRecipes(Blocks.BIRCH_PLANKS, ModBlocks.BIRCH_PANEL);
-                offerWoodenPanelRecipes(Blocks.JUNGLE_PLANKS, ModBlocks.JUNGLE_PANEL);
+//                offerWoodenPanelRecipes(Blocks.JUNGLE_PLANKS, ModBlocks.JUNGLE_PANEL);
                 offerWoodenPanelRecipes(Blocks.ACACIA_PLANKS, ModBlocks.ACACIA_PANEL);
                 offerWoodenPanelRecipes(Blocks.DARK_OAK_PLANKS, ModBlocks.DARK_OAK_PANEL);
                 offerWoodenPanelRecipes(Blocks.PALE_OAK_PLANKS, ModBlocks.PALE_OAK_PANEL);
@@ -186,6 +186,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerWoodenPanelRecipes(AzaleaWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.AZALEA_PANEL);
                 offerWoodenPanelRecipes(AzaleaWoodModBlocks.MOD_MOSAIC, CombinedWorldgenModBlocks.AZALEA_MOSAIC_PANEL);
                 offerWoodenPanelRecipes(BaobabWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.BAOBAB_PANEL);
+                offerWoodenPanelRecipes(CacaoWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.CACAO_PANEL);
                 offerWoodenPanelRecipes(ChollaWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.CHOLLA_PANEL);
                 offerWoodenPanelRecipes(ChollaWoodModBlocks.MOD_MOSAIC, CombinedWorldgenModBlocks.CHOLLA_MOSAIC_PANEL);
                 offerWoodenPanelRecipes(ChorusWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.CHORUS_PANEL);

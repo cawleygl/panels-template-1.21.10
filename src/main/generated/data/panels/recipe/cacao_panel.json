@@ -3,7 +3,7 @@
   "category": "building",
   "group": "wooden_panel",
   "key": {
-    "#": "minecraft:jungle_planks"
+    "#": "combined-worldgen:cacao_planks"
   },
   "pattern": [
     "#",
@@ -12,6 +12,6 @@
   ],
   "result": {
     "count": 6,
-    "id": "panels:jungle_panel"
+    "id": "panels:cacao_panel"
   }
 }

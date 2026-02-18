@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_x": {
+      "model": "combined-worldgen:block/cacao_planks"
+    },
+    "type=double_z": {
+      "model": "combined-worldgen:block/cacao_planks"
+    },
+    "type=single_east": {
+      "model": "panels:block/cacao_panel_east"
+    },
+    "type=single_north": {
+      "model": "panels:block/cacao_panel_north"
+    },
+    "type=single_south": {
+      "model": "panels:block/cacao_panel_south"
+    },
+    "type=single_west": {
+      "model": "panels:block/cacao_panel_west"
+    }
+  }
+}

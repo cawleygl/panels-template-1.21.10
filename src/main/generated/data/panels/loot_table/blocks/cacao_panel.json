@@ -11,14 +11,14 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "panels:jungle_panel",
+                  "block": "panels:cacao_panel",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double_x"
                   }
                 },
                 {
-                  "block": "panels:jungle_panel",
+                  "block": "panels:cacao_panel",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double_z"
@@ -32,7 +32,7 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "panels:jungle_panel"
+          "name": "panels:cacao_panel"
         }
       ],
       "rolls": 1.0

@@ -23,7 +23,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(ModBlocks.OAK_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(ModBlocks.SPRUCE_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(ModBlocks.BIRCH_PANEL.asItem());
-        valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(ModBlocks.JUNGLE_PANEL.asItem());
+//        valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(ModBlocks.JUNGLE_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(ModBlocks.ACACIA_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(ModBlocks.DARK_OAK_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(ModBlocks.PALE_OAK_PANEL.asItem());
@@ -97,6 +97,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(CombinedWorldgenModBlocks.AZALEA_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(CombinedWorldgenModBlocks.BAOBAB_PANEL.asItem());
+        valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(CombinedWorldgenModBlocks.CACAO_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(CombinedWorldgenModBlocks.CHOLLA_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(CombinedWorldgenModBlocks.CHORUS_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.WOODEN_PANELS).add(CombinedWorldgenModBlocks.CITRUS_PANEL.asItem());

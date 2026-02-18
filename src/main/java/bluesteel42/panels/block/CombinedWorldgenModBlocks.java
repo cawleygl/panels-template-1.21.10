@@ -5,6 +5,8 @@ import bluesteel42.combinedworldgen.wood.azalea.AzaleaWoodInitializer;
 import bluesteel42.combinedworldgen.wood.azalea.block.AzaleaWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.baobab.BaobabWoodInitializer;
 import bluesteel42.combinedworldgen.wood.baobab.block.BaobabWoodModBlocks;
+import bluesteel42.combinedworldgen.wood.cacao.CacaoWoodInitializer;
+import bluesteel42.combinedworldgen.wood.cacao.block.CacaoWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.cholla.ChollaWoodInitializer;
 import bluesteel42.combinedworldgen.wood.cholla.block.ChollaWoodModBlocks;
 import bluesteel42.combinedworldgen.wood.chorus.ChorusWoodInitializer;
@@ -27,7 +29,6 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.ItemGroups;
-import net.minecraft.item.Items;
 import net.minecraft.sound.BlockSoundGroup;
 
 public class CombinedWorldgenModBlocks {
@@ -63,6 +64,7 @@ public class CombinedWorldgenModBlocks {
     public static final Block AZALEA_PANEL = registerPanel(AzaleaWoodInitializer.MOD_WOOD_NAME, AzaleaWoodInitializer.MOD_STRIPPED_COLOR, AzaleaWoodInitializer.MOD_BLOCK_SOUND);
     public static final Block AZALEA_MOSAIC_PANEL = registerMosaicPanel(AzaleaWoodInitializer.MOD_WOOD_NAME, AzaleaWoodInitializer.MOD_STRIPPED_COLOR, AzaleaWoodInitializer.MOD_BLOCK_SOUND);
     public static final Block BAOBAB_PANEL = registerPanel(BaobabWoodInitializer.MOD_WOOD_NAME, BaobabWoodInitializer.MOD_FIBER_COLOR, BaobabWoodInitializer.MOD_BLOCK_SOUND);
+    public static final Block CACAO_PANEL = registerPanel(CacaoWoodInitializer.MOD_WOOD_NAME, CacaoWoodInitializer.MOD_FIBER_COLOR, CacaoWoodInitializer.MOD_BLOCK_SOUND);
     public static final Block CHOLLA_PANEL = registerPanel(ChollaWoodInitializer.MOD_WOOD_NAME, ChollaWoodInitializer.MOD_STRIPPED_COLOR, ChollaWoodInitializer.MOD_BLOCK_SOUND);
     public static final Block CHOLLA_MOSAIC_PANEL = registerMosaicPanel(ChollaWoodInitializer.MOD_WOOD_NAME, ChollaWoodInitializer.MOD_STRIPPED_COLOR, ChollaWoodInitializer.MOD_BLOCK_SOUND);
     public static final Block CHORUS_PANEL = registerPanel(ChorusWoodInitializer.MOD_WOOD_NAME, ChorusWoodInitializer.MOD_STRIPPED_COLOR, ChorusWoodInitializer.MOD_BLOCK_SOUND);
@@ -103,6 +105,7 @@ public class CombinedWorldgenModBlocks {
                     itemGroup.addAfter(AzaleaWoodModBlocks.MOD_SLAB, CombinedWorldgenModBlocks.AZALEA_PANEL);
                     itemGroup.addAfter(AzaleaWoodModBlocks.MOD_MOSAIC_SLAB, CombinedWorldgenModBlocks.AZALEA_MOSAIC_PANEL);
                     itemGroup.addAfter(BaobabWoodModBlocks.MOD_SLAB, CombinedWorldgenModBlocks.BAOBAB_PANEL);
+                    itemGroup.addAfter(CacaoWoodModBlocks.MOD_SLAB, CombinedWorldgenModBlocks.CACAO_PANEL);
                     itemGroup.addAfter(ChollaWoodModBlocks.MOD_SLAB, CombinedWorldgenModBlocks.CHOLLA_PANEL);
                     itemGroup.addAfter(ChollaWoodModBlocks.MOD_MOSAIC_SLAB, CombinedWorldgenModBlocks.CHOLLA_MOSAIC_PANEL);
                     itemGroup.addAfter(ChorusWoodModBlocks.MOD_SLAB, CombinedWorldgenModBlocks.CHORUS_PANEL);

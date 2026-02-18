@@ -21,6 +21,7 @@
   "block.panels.end_stone_brick_panel": "End Stone Brick Panel",
   "block.panels.exposed_cut_copper_panel": "Exposed Cut Copper Panel",
   "block.panels.granite_panel": "Granite Panel",
+  "block.panels.jungle_panel": "Jungle Panel",
   "block.panels.mangrove_panel": "Mangrove Panel",
   "block.panels.mossy_cobblestone_panel": "Mossy Cobblestone Panel",
   "block.panels.mossy_stone_brick_panel": "Mossy Stone Brick Panel",
@@ -61,7 +62,6 @@
   "block.panels.waxed_weathered_cut_copper_panel": "Waxed Weathered Cut Copper Panel",
   "block.panels.weathered_cut_copper_panel": "Weathered Cut Copper Panel",
 
-  "block.panels.jungle_panel": "Cacao Panel",
   "block.panels.mossy_brick_panel": "Mossy Brick Panel",
   "block.panels.mossy_tuff_brick_panel": "Mossy Tuff Brick Panel",
   "block.panels.mossy_deepslate_brick_panel": "Mossy Deepslate Brick Panel",
@@ -72,6 +72,7 @@
   "block.panels.azalea_mosaic_panel": "Azalea Mosaic Panel",
   "block.panels.azalea_panel": "Azalea Panel",
   "block.panels.baobab_panel": "Baobab Panel",
+  "block.panels.cacao_panel": "Cacao Panel",
   "block.panels.cholla_mosaic_panel": "Cholla Mosaic Panel",
   "block.panels.cholla_panel": "Cholla Panel",
   "block.panels.chorus_mosaic_panel": "Chorus Mosaic Panel",

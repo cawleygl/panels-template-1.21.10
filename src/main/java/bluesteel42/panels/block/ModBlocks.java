@@ -67,16 +67,16 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WOOD)
                     .burnable()
     );
-    public static final Block JUNGLE_PANEL = register(
-            "jungle_panel",
-            PanelBlock::new,
-            AbstractBlock.Settings.create()
-                    .mapColor(MapColor.DIRT_BROWN)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .strength(2.0F, 3.0F)
-                    .sounds(BlockSoundGroup.WOOD)
-                    .burnable()
-    );
+//    public static final Block JUNGLE_PANEL = register(
+//            "jungle_panel",
+//            PanelBlock::new,
+//            AbstractBlock.Settings.create()
+//                    .mapColor(MapColor.DIRT_BROWN)
+//                    .instrument(NoteBlockInstrument.BASS)
+//                    .strength(2.0F, 3.0F)
+//                    .sounds(BlockSoundGroup.WOOD)
+//                    .burnable()
+//    );
     public static final Block ACACIA_PANEL = register(
             "acacia_panel",
             PanelBlock::new,
@@ -287,7 +287,7 @@ public class ModBlocks {
     public static final Block POLISHED_DEEPSLATE_PANEL = register("polished_deepslate_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.POLISHED_DEEPSLATE));
     public static final Block DEEPSLATE_TILE_PANEL = register("deepslate_tile_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.DEEPSLATE_TILES));
     public static final Block DEEPSLATE_BRICK_PANEL = register("deepslate_brick_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.DEEPSLATE_BRICKS));
-    
+
 
     public static Block register(String id, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
         return register(id, factory, settings, true, false);
@@ -320,7 +320,7 @@ public class ModBlocks {
                     itemGroup.addAfter(Items.OAK_SLAB, ModBlocks.OAK_PANEL);
                     itemGroup.addAfter(Items.SPRUCE_SLAB, ModBlocks.SPRUCE_PANEL);
                     itemGroup.addAfter(Items.BIRCH_SLAB, ModBlocks.BIRCH_PANEL);
-                    itemGroup.addAfter(Items.JUNGLE_SLAB, ModBlocks.JUNGLE_PANEL);
+//                    itemGroup.addAfter(Items.JUNGLE_SLAB, ModBlocks.JUNGLE_PANEL);
                     itemGroup.addAfter(Items.ACACIA_SLAB, ModBlocks.ACACIA_PANEL);
                     itemGroup.addAfter(Items.CHERRY_SLAB, ModBlocks.CHERRY_PANEL);
                     itemGroup.addAfter(Items.DARK_OAK_SLAB, ModBlocks.DARK_OAK_PANEL);

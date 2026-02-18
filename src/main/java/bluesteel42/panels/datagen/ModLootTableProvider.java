@@ -1,18 +1,6 @@
 package bluesteel42.panels.datagen;
 
-import bluesteel42.combinedworldgen.wood.azalea.block.AzaleaWoodModBlocks;
-import bluesteel42.combinedworldgen.wood.baobab.block.BaobabWoodModBlocks;
-import bluesteel42.combinedworldgen.wood.cholla.block.ChollaWoodModBlocks;
-import bluesteel42.combinedworldgen.wood.chorus.block.ChorusWoodModBlocks;
-import bluesteel42.combinedworldgen.wood.citrus.block.CitrusWoodModBlocks;
-import bluesteel42.combinedworldgen.wood.dogwood.block.DogwoodWoodModBlocks;
-import bluesteel42.combinedworldgen.wood.kapok.block.KapokWoodModBlocks;
-import bluesteel42.combinedworldgen.wood.maple.block.MapleWoodModBlocks;
-import bluesteel42.combinedworldgen.wood.petrified.block.PetrifiedWoodModBlocks;
-import bluesteel42.combinedworldgen.wood.pine.block.PineWoodModBlocks;
-import bluesteel42.combinedworldgen.wood.willow.block.WillowWoodModBlocks;
 import bluesteel42.panels.block.*;
-import bluesteel42.panels.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
@@ -57,7 +45,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.OAK_PANEL, this::panelDrops);
         addDrop(ModBlocks.SPRUCE_PANEL, this::panelDrops);
         addDrop(ModBlocks.BIRCH_PANEL, this::panelDrops);
-        addDrop(ModBlocks.JUNGLE_PANEL, this::panelDrops);
+//        addDrop(ModBlocks.JUNGLE_PANEL, this::panelDrops);
         addDrop(ModBlocks.ACACIA_PANEL, this::panelDrops);
         addDrop(ModBlocks.DARK_OAK_PANEL, this::panelDrops);
         addDrop(ModBlocks.PALE_OAK_PANEL, this::panelDrops);
@@ -127,6 +115,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(CombinedWorldgenModBlocks.AZALEA_PANEL, this::panelDrops);
         addDrop(CombinedWorldgenModBlocks.AZALEA_MOSAIC_PANEL, this::panelDrops);
         addDrop(CombinedWorldgenModBlocks.BAOBAB_PANEL, this::panelDrops);
+        addDrop(CombinedWorldgenModBlocks.CACAO_PANEL, this::panelDrops);
         addDrop(CombinedWorldgenModBlocks.CHOLLA_PANEL, this::panelDrops);
         addDrop(CombinedWorldgenModBlocks.CHOLLA_MOSAIC_PANEL, this::panelDrops);
         addDrop(CombinedWorldgenModBlocks.CHORUS_PANEL, this::panelDrops);

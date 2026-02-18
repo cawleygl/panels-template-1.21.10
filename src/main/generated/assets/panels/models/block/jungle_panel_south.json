@@ -1,8 +1,0 @@
-{
-  "parent": "panels:block/template_consistent_panel_south",
-  "textures": {
-    "back": "minecraft:block/jungle_planks",
-    "front": "minecraft:block/jungle_planks",
-    "side": "minecraft:block/jungle_planks"
-  }
-}
