@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:red_nether_bricks"
+    "#": "nether-hyphae:red_nether_bricks"
   },
   "pattern": [
     "#",

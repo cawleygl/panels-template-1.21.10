@@ -60,7 +60,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         valueLookupBuilder(ModTags.Blocks.PANELS).add(ModBlocks.SMOOTH_QUARTZ_PANEL);
         valueLookupBuilder(ModTags.Blocks.PANELS).add(ModBlocks.GRANITE_PANEL);
         valueLookupBuilder(ModTags.Blocks.PANELS).add(ModBlocks.ANDESITE_PANEL);
-        valueLookupBuilder(ModTags.Blocks.PANELS).add(ModBlocks.RED_NETHER_BRICK_PANEL);
+//        valueLookupBuilder(ModTags.Blocks.PANELS).add(ModBlocks.RED_NETHER_BRICK_PANEL);
         valueLookupBuilder(ModTags.Blocks.PANELS).add(ModBlocks.POLISHED_ANDESITE_PANEL);
         valueLookupBuilder(ModTags.Blocks.PANELS).add(ModBlocks.DIORITE_PANEL);
         valueLookupBuilder(ModTags.Blocks.PANELS).add(ModBlocks.CUT_SANDSTONE_PANEL);
@@ -112,7 +112,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.SMOOTH_QUARTZ_PANEL);
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.GRANITE_PANEL);
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.ANDESITE_PANEL);
-        valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.RED_NETHER_BRICK_PANEL);
+//        valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.RED_NETHER_BRICK_PANEL);
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.POLISHED_ANDESITE_PANEL);
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.DIORITE_PANEL);
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.BLACKSTONE_PANEL);
@@ -187,9 +187,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         valueLookupBuilder(ModTags.Blocks.PANELS).add(CombinedWorldgenModBlocks.PETRIFIED_PANEL);
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(CombinedWorldgenModBlocks.PETRIFIED_PANEL);
 
+        valueLookupBuilder(ModTags.Blocks.PANELS).add(NetherHyphaeModBlocks.RED_NETHER_BRICK_PANEL);
         valueLookupBuilder(ModTags.Blocks.PANELS).add(NetherHyphaeModBlocks.BLUE_NETHER_BRICK_PANEL);
         valueLookupBuilder(ModTags.Blocks.PANELS).add(NetherHyphaeModBlocks.BLACK_NETHER_BRICK_PANEL);
         valueLookupBuilder(ModTags.Blocks.PANELS).add(NetherHyphaeModBlocks.GLOW_NETHER_BRICK_PANEL);
+        valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(NetherHyphaeModBlocks.RED_NETHER_BRICK_PANEL);
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(NetherHyphaeModBlocks.BLUE_NETHER_BRICK_PANEL);
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(NetherHyphaeModBlocks.BLACK_NETHER_BRICK_PANEL);
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE).add(NetherHyphaeModBlocks.GLOW_NETHER_BRICK_PANEL);

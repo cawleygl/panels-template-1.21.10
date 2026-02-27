@@ -79,7 +79,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SMOOTH_QUARTZ_PANEL, this::panelDrops);
         addDrop(ModBlocks.GRANITE_PANEL, this::panelDrops);
         addDrop(ModBlocks.ANDESITE_PANEL, this::panelDrops);
-        addDrop(ModBlocks.RED_NETHER_BRICK_PANEL, this::panelDrops);
+//        addDrop(ModBlocks.RED_NETHER_BRICK_PANEL, this::panelDrops);
         addDrop(ModBlocks.POLISHED_ANDESITE_PANEL, this::panelDrops);
         addDrop(ModBlocks.DIORITE_PANEL, this::panelDrops);
         addDrop(ModBlocks.CUT_SANDSTONE_PANEL, this::panelDrops);
@@ -128,6 +128,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(CombinedWorldgenModBlocks.WILLOW_PANEL, this::panelDrops);
         addDrop(CombinedWorldgenModBlocks.PETRIFIED_PANEL, this::panelDrops);
 
+        addDrop(NetherHyphaeModBlocks.RED_NETHER_BRICK_PANEL, this::panelDrops);
         addDrop(NetherHyphaeModBlocks.BLUE_NETHER_BRICK_PANEL, this::panelDrops);
         addDrop(NetherHyphaeModBlocks.BLACK_NETHER_BRICK_PANEL, this::panelDrops);
         addDrop(NetherHyphaeModBlocks.GLOW_NETHER_BRICK_PANEL, this::panelDrops);

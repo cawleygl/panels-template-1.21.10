@@ -212,21 +212,21 @@ public class ModBlocks {
             PanelBlock::new,
             AbstractBlock.Settings.create().mapColor(MapColor.MAGENTA).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(2.0F, 6.0F)
     );
-    public static final Block POLISHED_GRANITE_PANEL = register("polished_granite_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.POLISHED_GRANITE));
+    public static final Block POLISHED_GRANITE_PANEL = register("polished_granite_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.POLISHED_GRANITE));
     public static final Block SMOOTH_RED_SANDSTONE_PANEL = register(
-            "smooth_red_sandstone_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.SMOOTH_RED_SANDSTONE)
+            "smooth_red_sandstone_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.SMOOTH_RED_SANDSTONE)
     );
-    public static final Block MOSSY_STONE_BRICK_PANEL = register("mossy_stone_brick_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.MOSSY_STONE_BRICKS));
-    public static final Block POLISHED_DIORITE_PANEL = register("polished_diorite_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.POLISHED_DIORITE));
-    public static final Block MOSSY_COBBLESTONE_PANEL = register("mossy_cobblestone_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.MOSSY_COBBLESTONE));
-    public static final Block END_STONE_BRICK_PANEL = register("end_stone_brick_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.END_STONE_BRICKS));
-    public static final Block SMOOTH_SANDSTONE_PANEL = register("smooth_sandstone_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.SMOOTH_SANDSTONE));
-    public static final Block SMOOTH_QUARTZ_PANEL = register("smooth_quartz_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.SMOOTH_QUARTZ));
-    public static final Block GRANITE_PANEL = register("granite_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.GRANITE));
-    public static final Block ANDESITE_PANEL = register("andesite_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.ANDESITE));
-    public static final Block RED_NETHER_BRICK_PANEL = register("red_nether_brick_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.RED_NETHER_BRICKS));
-    public static final Block POLISHED_ANDESITE_PANEL = register("polished_andesite_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.POLISHED_ANDESITE));
-    public static final Block DIORITE_PANEL = register("diorite_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.DIORITE));
+    public static final Block MOSSY_STONE_BRICK_PANEL = register("mossy_stone_brick_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.MOSSY_STONE_BRICKS));
+    public static final Block POLISHED_DIORITE_PANEL = register("polished_diorite_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.POLISHED_DIORITE));
+    public static final Block MOSSY_COBBLESTONE_PANEL = register("mossy_cobblestone_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.MOSSY_COBBLESTONE));
+    public static final Block END_STONE_BRICK_PANEL = register("end_stone_brick_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.END_STONE_BRICKS));
+    public static final Block SMOOTH_SANDSTONE_PANEL = register("smooth_sandstone_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.SMOOTH_SANDSTONE));
+    public static final Block SMOOTH_QUARTZ_PANEL = register("smooth_quartz_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.SMOOTH_QUARTZ));
+    public static final Block GRANITE_PANEL = register("granite_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.GRANITE));
+    public static final Block ANDESITE_PANEL = register("andesite_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.ANDESITE));
+//    public static final Block RED_NETHER_BRICK_PANEL = register("red_nether_brick_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICKS));
+    public static final Block POLISHED_ANDESITE_PANEL = register("polished_andesite_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE));
+    public static final Block DIORITE_PANEL = register("diorite_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.DIORITE));
     public static final Block CRIMSON_PANEL = register(
             "crimson_panel",
             PanelBlock::new,
@@ -245,16 +245,16 @@ public class ModBlocks {
                     .strength(2.0F, 3.0F)
                     .sounds(BlockSoundGroup.NETHER_WOOD)
     );
-    public static final Block BLACKSTONE_PANEL = register("blackstone_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.BLACKSTONE).strength(2.0F, 6.0F));
+    public static final Block BLACKSTONE_PANEL = register("blackstone_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.BLACKSTONE).strength(2.0F, 6.0F));
     public static final Block POLISHED_BLACKSTONE_BRICK_PANEL = register(
-            "polished_blackstone_brick_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.POLISHED_BLACKSTONE_BRICKS).strength(2.0F, 6.0F)
+            "polished_blackstone_brick_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.POLISHED_BLACKSTONE_BRICKS).strength(2.0F, 6.0F)
     );
     public static final Block POLISHED_BLACKSTONE_PANEL = register(
-            "polished_blackstone_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.POLISHED_BLACKSTONE)
+            "polished_blackstone_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.POLISHED_BLACKSTONE)
     );
-    public static final Block TUFF_PANEL = register("tuff_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.TUFF));
-    public static final Block POLISHED_TUFF_PANEL = register("polished_tuff_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.POLISHED_TUFF));
-    public static final Block TUFF_BRICK_PANEL = register("tuff_brick_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.TUFF_BRICKS));
+    public static final Block TUFF_PANEL = register("tuff_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.TUFF));
+    public static final Block POLISHED_TUFF_PANEL = register("polished_tuff_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.POLISHED_TUFF));
+    public static final Block TUFF_BRICK_PANEL = register("tuff_brick_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.TUFF_BRICKS));
     public static final Block OXIDIZED_CUT_COPPER_PANEL = register(
             "oxidized_cut_copper_panel",
             settings -> new OxidizablePanelBlock(Oxidizable.OxidationLevel.OXIDIZED, settings),
@@ -283,10 +283,10 @@ public class ModBlocks {
     public static final Block WAXED_CUT_COPPER_PANEL = register(
             "waxed_cut_copper_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.WAXED_CUT_COPPER).requiresTool()
     );
-    public static final Block COBBLED_DEEPSLATE_PANEL = register("cobbled_deepslate_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.COBBLED_DEEPSLATE));
-    public static final Block POLISHED_DEEPSLATE_PANEL = register("polished_deepslate_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.POLISHED_DEEPSLATE));
-    public static final Block DEEPSLATE_TILE_PANEL = register("deepslate_tile_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.DEEPSLATE_TILES));
-    public static final Block DEEPSLATE_BRICK_PANEL = register("deepslate_brick_panel", PanelBlock::new, AbstractBlock.Settings.copyShallow(Blocks.DEEPSLATE_BRICKS));
+    public static final Block COBBLED_DEEPSLATE_PANEL = register("cobbled_deepslate_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE));
+    public static final Block POLISHED_DEEPSLATE_PANEL = register("polished_deepslate_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.POLISHED_DEEPSLATE));
+    public static final Block DEEPSLATE_TILE_PANEL = register("deepslate_tile_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.DEEPSLATE_TILES));
+    public static final Block DEEPSLATE_BRICK_PANEL = register("deepslate_brick_panel", PanelBlock::new, AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICKS));
 
 
     public static Block register(String id, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
@@ -351,7 +351,7 @@ public class ModBlocks {
                     itemGroup.addAfter(Items.SMOOTH_QUARTZ_SLAB, ModBlocks.SMOOTH_QUARTZ_PANEL);
                     itemGroup.addAfter(Items.GRANITE_SLAB, ModBlocks.GRANITE_PANEL);
                     itemGroup.addAfter(Items.ANDESITE_SLAB, ModBlocks.ANDESITE_PANEL);
-                    itemGroup.addAfter(Items.RED_NETHER_BRICK_SLAB, ModBlocks.RED_NETHER_BRICK_PANEL);
+//                    itemGroup.addAfter(Items.RED_NETHER_BRICK_SLAB, ModBlocks.RED_NETHER_BRICK_PANEL);
                     itemGroup.addAfter(Items.POLISHED_ANDESITE_SLAB, ModBlocks.POLISHED_ANDESITE_PANEL);
                     itemGroup.addAfter(Items.DIORITE_SLAB, ModBlocks.DIORITE_PANEL);
                     itemGroup.addAfter(Items.CRIMSON_SLAB, ModBlocks.CRIMSON_PANEL);

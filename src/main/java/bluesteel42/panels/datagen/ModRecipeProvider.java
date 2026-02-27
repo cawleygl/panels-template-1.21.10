@@ -123,7 +123,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonePanelRecipes(Blocks.PURPUR_BLOCK, ModBlocks.PURPUR_PANEL);
 
                 offerStonePanelRecipes(Blocks.NETHER_BRICKS, ModBlocks.NETHER_BRICK_PANEL);
-                offerStonePanelRecipes(Blocks.RED_NETHER_BRICKS, ModBlocks.RED_NETHER_BRICK_PANEL);
+//                offerStonePanelRecipes(Blocks.RED_NETHER_BRICKS, ModBlocks.RED_NETHER_BRICK_PANEL);
                 offerStonePanelRecipes(Blocks.QUARTZ_BLOCK, ModBlocks.QUARTZ_PANEL);
                 offerStonePanelRecipes(Blocks.SMOOTH_QUARTZ, ModBlocks.SMOOTH_QUARTZ_PANEL);
                 offerStonePanelRecipes(Blocks.BLACKSTONE, ModBlocks.BLACKSTONE_PANEL);
@@ -203,6 +203,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, CombinedWorldgenModBlocks.PETRIFIED_PANEL, PetrifiedWoodModBlocks.STRIPPED_MOD_LOG, 8);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, CombinedWorldgenModBlocks.PETRIFIED_PANEL, PetrifiedWoodModBlocks.STRIPPED_MOD_WOOD, 8);
 
+                offerStonePanelRecipes(bluesteel42.netherhyphae.block.ModBlocks.RED_NETHER_BRICKS, NetherHyphaeModBlocks.RED_NETHER_BRICK_PANEL);
                 offerStonePanelRecipes(bluesteel42.netherhyphae.block.ModBlocks.BLUE_NETHER_BRICKS, NetherHyphaeModBlocks.BLUE_NETHER_BRICK_PANEL);
                 offerStonePanelRecipes(bluesteel42.netherhyphae.block.ModBlocks.BLACK_NETHER_BRICKS, NetherHyphaeModBlocks.BLACK_NETHER_BRICK_PANEL);
                 offerStonePanelRecipes(bluesteel42.netherhyphae.block.ModBlocks.GLOW_NETHER_BRICKS, NetherHyphaeModBlocks.GLOW_NETHER_BRICK_PANEL);

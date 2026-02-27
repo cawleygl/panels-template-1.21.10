@@ -137,7 +137,7 @@ public class ModModelProvider extends FabricModelProvider {
         registerConsistentPanel(blockStateModelGenerator, Blocks.END_STONE_BRICKS, ModBlocks.END_STONE_BRICK_PANEL);
         registerConsistentPanel(blockStateModelGenerator, Blocks.GRANITE, ModBlocks.GRANITE_PANEL);
         registerConsistentPanel(blockStateModelGenerator, Blocks.ANDESITE, ModBlocks.ANDESITE_PANEL);
-        registerConsistentPanel(blockStateModelGenerator, Blocks.RED_NETHER_BRICKS, ModBlocks.RED_NETHER_BRICK_PANEL);
+//        registerConsistentPanel(blockStateModelGenerator, Blocks.RED_NETHER_BRICKS, ModBlocks.RED_NETHER_BRICK_PANEL);
         registerConsistentPanel(blockStateModelGenerator, Blocks.POLISHED_ANDESITE, ModBlocks.POLISHED_ANDESITE_PANEL);
         registerConsistentPanel(blockStateModelGenerator, Blocks.DIORITE, ModBlocks.DIORITE_PANEL);
         registerConsistentPanel(blockStateModelGenerator, Blocks.CUT_SANDSTONE, ModBlocks.CUT_SANDSTONE_PANEL);
@@ -193,6 +193,7 @@ public class ModModelProvider extends FabricModelProvider {
         registerConsistentPanel(blockStateModelGenerator, WillowWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.WILLOW_PANEL);
         registerConsistentPanel(blockStateModelGenerator, PetrifiedWoodModBlocks.MOD_PLANKS, CombinedWorldgenModBlocks.PETRIFIED_PANEL);
 
+        registerConsistentPanel(blockStateModelGenerator, bluesteel42.netherhyphae.block.ModBlocks.RED_NETHER_BRICKS, NetherHyphaeModBlocks.RED_NETHER_BRICK_PANEL);
         registerConsistentPanel(blockStateModelGenerator, bluesteel42.netherhyphae.block.ModBlocks.BLUE_NETHER_BRICKS, NetherHyphaeModBlocks.BLUE_NETHER_BRICK_PANEL);
         registerConsistentPanel(blockStateModelGenerator, bluesteel42.netherhyphae.block.ModBlocks.BLACK_NETHER_BRICKS, NetherHyphaeModBlocks.BLACK_NETHER_BRICK_PANEL);
         registerConsistentPanel(blockStateModelGenerator, bluesteel42.netherhyphae.block.ModBlocks.GLOW_NETHER_BRICKS, NetherHyphaeModBlocks.GLOW_NETHER_BRICK_PANEL);

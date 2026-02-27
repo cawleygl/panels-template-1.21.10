@@ -1,7 +1,5 @@
 package bluesteel42.panels.registries;
 
-import bluesteel42.overworldhyphae.OverworldHyphae;
-import bluesteel42.overworldhyphae.item.ModItems;
 import bluesteel42.overworldhyphae.util.ModStats;
 import bluesteel42.panels.block.ModBlocks;
 import bluesteel42.panels.block.OverworldHyphaeModBlocks;

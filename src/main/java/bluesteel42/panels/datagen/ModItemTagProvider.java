@@ -59,7 +59,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ModTags.Items.PANELS).add(ModBlocks.SMOOTH_QUARTZ_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.PANELS).add(ModBlocks.GRANITE_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.PANELS).add(ModBlocks.ANDESITE_PANEL.asItem());
-        valueLookupBuilder(ModTags.Items.PANELS).add(ModBlocks.RED_NETHER_BRICK_PANEL.asItem());
+//        valueLookupBuilder(ModTags.Items.PANELS).add(ModBlocks.RED_NETHER_BRICK_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.PANELS).add(ModBlocks.POLISHED_ANDESITE_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.PANELS).add(ModBlocks.DIORITE_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.PANELS).add(ModBlocks.CUT_SANDSTONE_PANEL.asItem());
@@ -114,6 +114,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ModTags.Items.PANELS).add(CombinedWorldgenModBlocks.PETRIFIED_PANEL.asItem());
         valueLookupBuilder(ItemTags.NON_FLAMMABLE_WOOD).add(CombinedWorldgenModBlocks.PETRIFIED_PANEL.asItem());
 
+        valueLookupBuilder(ModTags.Items.PANELS).add(NetherHyphaeModBlocks.RED_NETHER_BRICK_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.PANELS).add(NetherHyphaeModBlocks.BLUE_NETHER_BRICK_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.PANELS).add(NetherHyphaeModBlocks.BLACK_NETHER_BRICK_PANEL.asItem());
         valueLookupBuilder(ModTags.Items.PANELS).add(NetherHyphaeModBlocks.GLOW_NETHER_BRICK_PANEL.asItem());
